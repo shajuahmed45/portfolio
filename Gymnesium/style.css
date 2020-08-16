@@ -1,0 +1,857 @@
+/*----------------------------------------------------------------------------------
+
+	Template Name: Gymnesium Website
+	Description: Personal Website
+	Author: Md. Shaju Ahmed
+	Author URL: http://www.shajuahmed.com
+	License: GNU General Public 
+	Version: 1.0
+-----------------------------------------------------------------------------------
+
+	1. Typography
+	2. Header Area
+	3. Getting Started
+	4. Design Area
+	5. Community Area
+	6. Subscribe Area
+	7. Download Area
+	8. Footer Area
+
+-----------------------------------------------------------------------------------*/
+
+
+/************** 1. Typography ************************/
+
+/* display
+ position 
+ box-model 
+ colors/typography
+ others*/
+
+/*================================COMMON CSS START================================*/
+
+
+*{
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	font-family: 'Oswald', sans-serif;
+ }
+
+html, body {height: 100%;}
+
+p{
+ 	font-weight: 400;
+ 	font-family: 'Open Sans', sans-serif;
+ }
+
+h1, h2, h3, h4, h5, h6 {
+  
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  }
+
+h1, h2, h3, h4, h5, h6, ul, ol, li{
+	margin: 0;
+	padding: 0;
+}
+
+ul, ol{
+	list-style: outside none none;
+	margin: 0;
+	padding: 0
+}
+
+.clear{clear:both}
+a {transition: all linear 0.4s; text-decoration:none; display: inline-block;}
+
+a:hover{
+	text-decoration: none;
+}
+
+img {max-width:100%; height:auto; vertical-align: middle;}
+.fix {overflow:hidden}
+
+/*================================COMMON CSS END================================*/
+
+
+/* =============================================================
+			MENU SECTION START HERE
+ =============================================================*/
+.my_menu{
+	background: rgba(53,53,53,.25);
+	position: absolute;
+	left: 0;
+	top: 30px;
+	width: 100%;
+
+}
+
+.menu_inner{
+	position: relative;
+}
+
+
+.my_menu .logo{
+	
+}
+
+
+.my_menu .logo{
+	
+	background: #323232;
+	display: inline-block;
+	transform: skewX(-30deg);
+	position: absolute;
+	top: -12px;
+	left: 0;
+}
+
+.my_menu .logo img{
+	transform: skewX(30deg);
+	padding: 10px 25px;
+}
+
+.my_menu ul li a.nav-link{
+	padding: 0 11px !important;
+	line-height: 50px;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	position: relative;
+}
+
+.my_menu ul li.active a.nav-link{
+	color: #e23e38;
+}
+
+.my_menu ul li a:hover{
+	background: #fff;
+	color: #222222;
+}
+
+.my_menu ul li a:after{
+	position: absolute;
+	content: "";
+	clear: both;
+	display: block;
+	left: 0;
+	bottom: 0;
+	background:  #e23e38;
+	height: 3px;
+	width: 0;
+	transition: all linear .4s;
+}
+
+.my_menu ul li a:hover:after{
+	width: 100%;
+}
+ /* =============================================================
+			MENU SECTION END HERE
+ =============================================================*/
+
+
+/* =============================================================
+			BANNER SECTION START HERE
+ =============================================================*/
+ .banner{
+ 	background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(img/bg-img.jpg);
+ 	height: 600px;
+ 	background-position: center;
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	padding: 250px 0 117px 0px;
+ }
+
+
+
+.banner .banner_info h2 {
+    color: #fff;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+}
+
+.banner .banner_info h2:after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 112px;
+    background: #e23e38;
+    top: 10px;
+    right: 3px;
+}
+
+
+.banner .banner_info h2:before {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 170px;
+    background: #e23e38;
+    top: 10px;
+    left:0;
+}
+
+
+.banner .banner_info h1 {
+    color: #e23e38;
+    font-size: 60px;
+    text-transform: uppercase;
+    padding: 15px 0;
+    position: relative;
+}
+
+
+.banner .banner_info h1:after {
+    position: absolute;
+    content: "";
+    height: 195px;
+    width: 3px;
+    background: #e23e38;
+    top: -23px;
+    left: 0;
+}
+
+
+.banner .banner_info h1:before {
+    position: absolute;
+    content: "";
+    height: 200px;
+    width: 3px;
+    background: #e23e38;
+    top: -26px;
+    right: 2px;
+}
+
+.banner .banner_info p{
+	font-size: 12.5px;
+	color: #ddd;
+	padding-bottom: 15px;
+	font-family: 'Open Sans', sans-serif;
+	position: relative;
+}
+
+
+.banner .banner_info p:after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 35px;
+    background: #e23e38;
+    top: 70px;
+    right: 3px;
+}
+
+.banner .banner_info p:before {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 67px;
+    background: #e23e38;
+    top: 70px;
+    left: 0px;
+}
+
+
+
+.banner .banner_info a{
+	padding: 10px 20px;
+	border: 1px solid #fff;
+	margin-right: 15px;
+	margin-left:  15px;
+	font-weight: 600;
+	color: #fff;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+}
+
+.banner .banner_info a:hover{
+	background: #e23e38;
+	color: #fff;
+}
+ /* =============================================================
+			BANNER SECTION END HERE
+ =============================================================*/
+
+
+ /* =============================================================
+			ABOUT AREA SECTION START HERE
+ =============================================================*/
+
+.about-area{
+	padding: 80px 0;
+}
+
+
+
+.about-area .about-img{
+	 position: relative;
+	 
+}
+
+.about-img .overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.6);
+
+	
+}
+
+.about-img .overlay .fa-play-circle{
+	color: #e23e38;
+	font-size: 50px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 999;
+	cursor: pointer;
+	
+}
+
+.about-img .overlay .fa-play-circle:hover{
+	color: #fff;
+}
+
+.heading h3{
+	font-size: 22px;
+	font-weight: 400;
+	color: #222;
+	text-transform: uppercase;
+
+}
+.descrip p{
+	color: #444;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.descrip p span{
+	color: #444;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	display: block;
+	padding-top: 30px;
+}
+
+ /* =============================================================
+			ABOUT AREA SECTION END HERE
+ ================================================================*/
+
+
+ /* =============================================================
+			OUR GALLERY SECTION START HERE
+ ================================================================*/
+.back-image {
+
+			background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(img/gallery-background.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			padding: 30px 0;
+			height: 900px;
+			margin-top: 10px;
+			
+}
+
+.gallery-img{
+	position: relative;
+}
+
+.gallery-img .img-overlay{
+	position: absolute;
+	content: "";
+	left: 10px;
+	top: 10px;
+	right: 10px;
+	bottom: 10px;
+	background: rgba(226,62,56,.5);
+	border: 5px solid #fff;
+	opacity: 0;
+	transition: all linear .4s;
+}
+
+.img-overlay .fa-search-plus{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	color: #fff;
+	font-size: 20px;
+	cursor: pointer;
+
+}
+
+.gallery-img:hover .img-overlay{
+	opacity: 1;
+
+}
+
+.for-mar{
+	margin-top: 30px;
+}
+ /* =============================================================
+			OUR GALLERY SECTION END HERE
+ ================================================================*/
+
+ /* =============================================================
+			OUR TEAM SECTION START HERE
+ ================================================================*/
+ .our_team{
+ 	padding: 75px 0;
+
+ }
+
+.team_img{
+ 	position: relative;
+ 	transition: all linear 0.4s;
+ }
+
+.team_img .team_overlay{
+ 	position: absolute;
+ 	content: '';
+ 	left: 10px;
+ 	top: 10px;
+ 	right: 10px;
+ 	bottom: 10px;
+ 	border: 5px solid #fff;
+ 	background: rgba(226,62,56,.5);
+ 	opacity: 0;
+ 	transition: all 0.3s ease;
+ }
+
+ .team_img .team_overlay ul{
+ 	position: absolute;
+ 	content: '';
+ 	top: 50%;
+ 	right: 20px;
+ 	transform: translateY(-50%);
+
+ }
+
+.team_text p{
+	font-size: 13px;
+	color: #444;
+	visibility: hidden;
+}
+
+
+
+.team_main:hover{
+	position: relative;
+	top: -30px;
+}
+
+.team_main:hover .team_img .team_overlay{
+	opacity: 1;
+}
+.team_main:hover .team_text p{
+	visibility: visible;
+}
+
+.team_text h5{
+	font-size: 14px;
+	color: #222;
+	padding: 20px 0px 8px 0px;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+.team_text h6{
+	font-size: 14px;
+	color: #222;
+	text-transform: capitalize;
+	font-weight: 400;
+}
+
+.team_text p{
+	font-size: 13px;
+	color: #444;
+	padding-top: 12px;
+}
+
+.team_img .team_overlay ul li a{
+	color: #fff;
+	padding: 10px 0;
+	border: 1px solid #fff;
+	padding: 4px 6px;
+	display: block;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+.team_img .team_overlay ul li a:hover{
+	background: #fff;
+	color: #444; 
+}
+
+.mar-for{
+	margin-top: 50px;
+}
+
+
+ /* =============================================================
+			OUR TEAM SECTION END HERE
+ ================================================================*/
+
+
+ /* =============================================================
+			TESTIMONIAL SECTION START HERE
+ ================================================================*/
+.testimonial-for-bg{
+	background:  linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(img/testimonial.bg.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 250px;
+	margin: 30px 0;
+
+}
+
+.test-img img{
+	float: left;
+	padding: 20px 10px 8px 0px;
+}
+
+.test-text h5{
+	font-size: 14px;
+	color: #fff;
+	padding: 20px 0px 8px 0px;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+.test-text h6{
+	font-size: 14px;
+	color: #fff;
+	text-transform: capitalize;
+	font-weight: 400;
+	padding-bottom: 10px;
+}
+
+.testimonial-for-bg p{
+	font-size: 13px;
+	color: #dddddd;
+	font-weight: 400;
+	padding-bottom: 35px;
+
+}
+
+.test-text ul li a{
+	color: #e23e38;
+	padding: 0px 0px 35px 0px;
+	display: block;
+	
+}
+ /* =============================================================
+			TESTIMONIAL SECTION END HERE
+ ================================================================*/
+
+  /* =============================================================
+			MEMBERSHIP SECTION START HERE
+ ================================================================*/
+.membership{
+ 	margin: 50px 0;
+}
+.member{
+	text-align: center;
+}
+ .member .mem-title h5{
+ 	font-size: 16px;
+ 	color: #222;
+ 	font-weight: 400;
+ 	text-transform: uppercase;
+ 	background-color: #ddd;
+ 	padding: 20px 100px;
+ 	transition: all linear 0.4s;
+ }
+
+
+.mem-img{
+	position: relative;
+}
+ .overlay-img{
+ 	position: absolute;
+ 	content: '';
+ 	left: 0;
+ 	top: 0;
+ 	height: 100%;
+ 	width: 100%;
+ 	background: rgba(0,0,0,.8);
+ }
+
+ .overlay-img p{
+ 	position: absolute;
+ 	left: 50%;
+ 	top: 50%;
+ 	transform: translate(-50%,-50%);
+ 	color: #fff;
+ 	font-size: 25px;
+ }
+
+ .overlay-img p span{
+ 	font-size: 50px;
+ 	color: #fff;
+ 	font-weight: 500;
+ }
+.mem-items{
+	padding: 40px 0px;
+	background: #f1f1f1;
+}
+
+
+ .mem-items ul li{
+ 	
+ 	color: #000;
+ 	font-size: 14px;
+ 	text-transform: capitalize;
+ 	padding: 08px 0px;
+
+ }
+
+ .member a.btn-join{
+ 	background: #ddd;
+ 	border-radius: 0;
+ 	display:block;
+ 	padding: 5px 0px;
+ 	font-size: 15px;
+ 	transition: all linear 0.4s;
+ 	
+ }
+
+ .member:hover .mem-title h5{
+ 	background: #e23e38;
+ 	color: #fff;
+ }
+
+ .member:hover a.btn-join{
+ 	background: #e23e38;
+ 	color: #fff;
+ }
+
+ /* =============================================================
+			MEMBERSHIP SECTION END HERE
+ ================================================================*/
+
+ /* =============================================================
+			HAPPY CLIENTS SECTION START HERE
+ ================================================================*/
+.happy-client{
+	background:  linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(img/happy-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 150px;
+	margin: 80px 0px;
+}
+
+.happy-client .happy-text{
+	margin-top: 42px;
+}
+
+.happy-text .des-text h3{
+	font-size: 40px;
+	color: #fff;
+	padding-bottom: 5px;
+}
+
+
+.happy-text .des-text h6{
+	font-size: 16px;
+	color: #fff;
+	font-weight: 400;
+}
+ /* =============================================================
+			HAPPY CLIENTS SECTION END HERE
+ ================================================================*/
+
+ /* =============================================================
+			OUR CLASSES SECTION START HERE
+ ================================================================*/
+
+.our-classes ul{
+	display: flex;
+	text-align: center;
+}
+
+ul.my_nav_items li{
+	flex-grow: 1;
+}
+
+ul.my_nav_items li a{
+	color: #222;
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+	background: #f1f1f1;
+	padding: 20px;
+	display: block;
+	
+}
+
+ul.my_nav_items li a.active{
+	background: #e23e38;
+	color: #fff;
+} 
+
+.icon_detai ul li{
+	flex-grow: 1;
+}
+
+.icon_detai ul li h6{
+	font-size: 16px;
+	color: #222;
+	font-weight: 400;
+}
+
+.icon_detai ul li p{
+	font-size: 14px;
+	color: #444;
+}
+
+.icon_detai ul li {
+	background: #f1f1f1;
+	padding: 50px;
+	margin-right: 2px;
+	margin-left:  2px;
+}
+
+.icon_detai ul li:hover{
+	background: #e23e38;
+	color: #fff;
+	transform: scale(1.1);
+
+}
+
+ /* =============================================================
+			OUR CLASSES SECTION END HERE
+ ================================================================*/
+
+  /* =============================================================
+			BRAND LOGO SECTION START HERE
+ ================================================================*/
+.brand-logo{
+	margin: 80px 0px;
+}
+ /* =============================================================
+			BRAND LOGO SECTION END HERE
+ ================================================================*/
+
+ /* =============================================================
+			FOOTER SECTION START HERE
+ ================================================================*/
+.footer{
+	background:  linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(img/footer-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 500px;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.footer-logo img{
+	padding-bottom: 25px;
+}
+
+.footer-details{
+	border-top: 1px solid #fff;
+	border-bottom:  1px solid #fff;
+	padding-top: 25px;
+	padding-bottom: 15px;
+}
+.headline h5{
+	color: #fff;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-right: 20px;
+}
+
+
+.time-period ul li{
+	font-size: 13px;
+	color: #ddd;
+	font-family: 'Open Sans', sans-serif;
+	padding: 07px 0px;
+	display: block;
+	
+
+
+}
+
+.time-day ul li{
+	font-size: 13px;
+	color: #ddd;
+	font-family: 'Open Sans', sans-serif;
+	padding: 07px 0px;
+	display: block;
+}
+
+.twieet-des .icon .fa-twitter{
+	color: #1da1f2;
+	font-weight: 20;
+	margin-right: 10px;
+}
+
+.twi-p p{
+	font-size: 13px;
+	color: #ddd;
+	text-align: left;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.contact-det ul li a{
+	color: #e23e38;
+	font-size: 13px;
+	padding-bottom: 30px;
+	margin-right: 3px;
+}
+
+.contact-det ul li{
+	color: #fff;
+	font-size: 13px;
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+.social-icon ul li a{
+	margin-right: 10px;
+	color: #fff;
+	font-size: 16px;
+	border: 1px solid #fff;
+	padding: 5px 10px; 
+}
+
+.social-icon ul li a:hover{
+	background: #e23e38;
+	color: #fff; 
+}
+
+
+.copyright p{
+	color: #fff;
+	line-height: 50px;
+}
+
+.copyright p span{
+	color: #e23e38;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+  /* =============================================================
+			FOOTER SECTION END HERE
+ ================================================================*/
+
+
+
+ /*===============================The End======================================*/
